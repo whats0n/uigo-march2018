@@ -1,0 +1,21 @@
+<!-- begin slider -->
+<div class="slider">
+	<div class="inner slider__inner">
+		{% set slides = [
+			{
+				img: '',
+				label: '',
+				title: ''
+			}
+		] %}
+		<div class="slider__content">
+			{% for item in slides %}
+				<div class="slider__slide">
+					<div class="slider__label">{{item.label}}</div>
+					<div class="slider__title">{{item.title}}</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end slider -->
