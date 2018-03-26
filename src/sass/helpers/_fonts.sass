@@ -1,0 +1,34 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $family: null)
+	@if $family != null
+		font-family: $family
+	@else 
+		font-family: $lato
+	font-style: $style
+	font-weight: $weight
+
+//LATO
+//regular
+@font-face
+	+fontdefault(normal, 400)
+	+fontpath('Lato Regular', 'Lato-Regular', lato-regular)
+@font-face
+	+fontdefault(italic, 400)
+	+fontpath('Lato Italic', 'Lato-Italic', lato-italic)
+
+//MONTSERRAT
+//bold
+@font-face
+	+fontdefault(normal, 700, $montserrat)
+	+fontpath('Montserrat Bold', 'Montserrat-Bold', montserrat-bold)
+@font-face
+	+fontdefault(italic, 700, $montserrat)
+	+fontpath('Montserrat Bold Italic', 'Montserrat-BoldItalic', montserrat-bolditalic)
+
+//ARBUTUS SLAB
+//regular
+@font-face
+	+fontdefault(normal, 400, $arbutus)
+	+fontpath('Montserrat Bold', 'Montserrat-Bold', montserrat-bold)
