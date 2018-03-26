@@ -1,1 +1,61 @@
-<p>Hello from partials/_header.html</p>
+<!-- begin header -->
+<header class="header">
+	<div class="inner header__inner">
+		<a href="#" class="logo">
+			{{mixins.icon('logo', 'logo__icon')}}
+		</a>
+		<button class="header__nav js-nav-control"></button>
+	</div>
+	<div class="menu js-nav">
+		<div class="menu__center">
+			<div class="inner menu__inner">
+				<nav class="nav menu__nav">
+					<ul class="nav__list">
+						{% for item in [ 'work', 'services', 'about us', 'contact' ] %}
+						    <li class="nav__item">
+						    	<a href="#" class="nav__link">{{item}}</a>
+						    </li>
+						{% endfor %}
+					</ul>
+				</nav>
+				<div class="menu__content">
+					{% for item in [
+						{
+							icon: 'uy-flag',
+							iconAlt: 'Uruguay Flag',
+							title: 'URUGUAY',
+							address: 'Cassinoni 1011, Montevideo.',
+							phone: '+598 155 6543',
+							phoneLink: '+5981556543'
+						},
+						{
+							icon: 'us-flag',
+							iconAlt: 'United State Flag',
+							title: 'UNITED STATES',
+							address: '2101 Brickell Ave, Apt 401 Miami, FL 33129',
+							phone: '+ 19419000806',
+							phoneLink: '+19419000806'
+						}
+					] %}
+						<div class="menu__info">
+							<img src="img/{{item.icon}}.svg" alt="{{item.iconAlt}}" class="menu__icon">
+							<div class="menu__subtitle">{{item.title}}</div>
+							<ul class="menu__meta">
+								<li>{{item.address}}</li>
+								<li><a href="tel:{{item.phoneLink}}">{{item.phone}}</a></li>
+							</ul>
+						</div>
+					{% endfor %}
+					<ul class="menu__subnav">
+						{% for item in [ 'CONTACT US', 'FACEBOOK', 'BEHANCE', 'INSTAGRAM' ] %}
+						    <li class="menu__item">
+						    	<a href="#" class="menu__link {% if loop.first %}is-active{% endif %}">{{item}}</a>
+						    </li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- end header -->

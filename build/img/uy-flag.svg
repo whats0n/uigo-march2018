@@ -1,0 +1,14 @@
+<svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        uy-flag
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M15 10h-5V5h5z"/>
+        <path fill="#FFF" d="M10 10H5V5h5z"/>
+        <path fill="#56AFFF" d="M15 15h-5v-5h5z"/>
+        <path fill="#56AFFF" d="M10 15H5v-5h5z"/>
+        <g fill="#FFDC45">
+            <rect width="10" height="10" rx="5"/>
+        </g>
+    </g>
+</svg>

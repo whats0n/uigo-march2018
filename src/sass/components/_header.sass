@@ -1,0 +1,41 @@
+.header
+	padding-top: 47px
+	+sm 
+		padding-top: 20px
+	&__nav
+		position: relative
+		z-index: 1000
+		float: right
+		margin-right: -7px
+		width: 31px
+		height: 31px
+		background: none
+		&.is-active
+			&:before
+				transform: translate3d(0px,-3px,0) rotate(-45deg) scaleX(1.4)
+			&:after
+				transform: translate3d(0px,2px,0) rotate(45deg) scaleX(1.4)
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			right: 7px
+			width: 17px
+			height: 3px
+			background: $dark
+			transform-origin: right center
+			transition: transform 0.25s
+		&:before
+			top: 8px
+		&:after
+			bottom: 8px
+
+.logo
+	position: relative
+	z-index: 1000
+	display: inline-block
+	vertical-align: top
+	font-size: 31px
+	&__icon
+		display: block
+		fill: $dark

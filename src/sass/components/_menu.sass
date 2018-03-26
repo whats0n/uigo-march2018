@@ -1,0 +1,85 @@
+.menu
+	position: fixed
+	z-index: 999
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	padding-top: 100px
+	min-width: 320px
+	background: rgba(#FAFAFA, 0.9)
+	box-shadow: 0 24px 55px 0 rgba(0,0,0,0.19)
+	+vertical
+	transform: translate3d(110%,0,0)
+	transition: transform 0.3s ease-in-out
+	@supports (backdrop-filter: blur(11px))
+		background: rgba(#FAFAFA, 0.69)
+		backdrop-filter: blur(11px)
+	+sm 
+		padding-top: 71px
+	&.is-open
+		transform: translate3d(0,0,0)
+	&__center
+		display: inline-block
+		vertical-align: middle
+		overflow: auto
+		padding-bottom: 78px
+		width: 100%
+		max-height: 100%
+		+sm 
+			padding-bottom: 20px
+	&__content
+		position: relative
+		float: left
+		width: 50%
+		text-align: left
+		+md 
+			width: 60%
+		+sm 
+			width: 100%
+	&__nav
+		float: right
+		width: 50%
+		+md 
+			width: 40%
+		+sm 
+			padding-bottom: 50px
+			width: 100%
+	&__info
+		padding-bottom: 22px
+	&__icon
+		margin-bottom: 7px
+	&__subtitle
+		font-family: $montserrat
+		+f(14px, 700, 1.4)
+		letter-spacing: 0.4px
+	&__meta
+		+f(15px, 400, 20px)
+		letter-spacing: -0.02px
+		a 
+			color: inherit
+			transition: color 0.25s
+			+hover
+				color: $pink
+	&__subnav
+		margin: 69px -13px 0
+		+md 
+			margin-top: 13px
+	&__item
+		display: inline-block
+		vertical-align: top 
+		+sm 
+			display: block
+	&__link
+		display: inline-block
+		vertical-align: top
+		padding: 0 13px
+		color: $dark
+		font-family: $montserrat
+		+f(12px, 700, 46px)
+		letter-spacing: 0.34px
+		transition: color 0.25s
+		+hover
+			color: $pink
+		&.is-active
+			color: $pink

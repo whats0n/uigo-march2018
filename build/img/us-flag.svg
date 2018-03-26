@@ -1,0 +1,20 @@
+<svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        us-flag
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M15 9h-5V4h5z"/>
+        <path fill="#FFF" d="M10 9H5V4h5z"/>
+        <path fill="#FF6060" d="M15 14h-5V9h5z"/>
+        <path fill="#FF6060" d="M10 14H5V9h5z"/>
+        <g>
+            <path fill="#5672FF" d="M0 0h9v9H0z"/>
+            <g transform="translate(1.714 1.714)" fill="#FFF">
+                <circle cx=".964" cy=".964" r="1"/>
+                <circle cx=".964" cy="4.179" r="1"/>
+                <circle cx="4.179" cy=".964" r="1"/>
+                <circle cx="4.179" cy="4.179" r="1"/>
+            </g>
+        </g>
+    </g>
+</svg>
