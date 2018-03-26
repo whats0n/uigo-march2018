@@ -1,18 +1,43 @@
 <!-- begin slider -->
-<div class="slider">
+<div class="slider js-slider">
 	<div class="inner slider__inner">
 		{% set slides = [
 			{
-				img: '',
-				label: '',
-				title: ''
+				color: 'pink',
+				img: 'home-jeanvernier.png',
+				label: 'WE ARE IUGO,',
+				subtitle: 'WE ROCK AT',
+				title: 'BRANDING DESIGN'
+			},
+			{
+				color: 'yellow',
+				img: 'home-daps.png',
+				label: 'WE ARE IUGO,',
+				subtitle: 'WE ROCK AT',
+				title: 'UI/UX'
+			},
+			{
+				color: 'azure',
+				img: 'home-starcenter.png',
+				label: 'WE ARE IUGO,',
+				subtitle: 'WE ROCK AT',
+				titleSM: 'LARAVEL DEVELOPMENT'
 			}
 		] %}
-		<div class="slider__content">
+		<div class="slider__pictures">
 			{% for item in slides %}
-				<div class="slider__slide">
-					<div class="slider__label">{{item.label}}</div>
-					<div class="slider__title">{{item.title}}</div>
+				<img src="img/{{item.img}}" alt="{{item.title or item.titleSM}}" class="slider__picture slider__picture_{{loop.index}} js-slider-picture" data-index="{{loop.index}}">
+			{% endfor %}
+		</div>
+		<div class="slider__content owl-carousel js-slider-content">
+			{% for item in slides %}
+				<div class="slider__slide slider__slide_{{item.color}} js-slider-slide" data-index="{{loop.index}}">
+					<div class="slider__info">
+						<div class="slider__label">{{item.label}}</div>
+						<div class="slider__subtitle">{{item.subtitle}}</div>
+						{% if item.title %}<div class="slider__title">{{item.title}}</div>{% endif %}
+						{% if item.titleSM %}<div class="slider__title-sm">{{item.titleSM}}</div>{% endif %}
+					</div>
 				</div>
 			{% endfor %}
 		</div>
