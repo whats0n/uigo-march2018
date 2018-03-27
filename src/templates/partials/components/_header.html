@@ -6,7 +6,7 @@
 		</a>
 		<button class="header__nav js-nav-control"></button>
 	</div>
-	<div class="menu js-nav">
+	<div class="menu js-nav is-contacts">
 		<div class="menu__center">
 			<div class="inner menu__inner">
 				<nav class="nav menu__nav">
@@ -18,6 +18,25 @@
 						{% endfor %}
 					</ul>
 				</nav>
+				<div class="contacts menu__contacts">
+					<form action="/" class="contacts__form">
+						<div class="contacts__title">drop us a line</div>
+						<div class="contacts__fields">
+							{% for item in [
+								{ placeholder: 'Name' },
+								{ placeholder: 'Email' },
+								{ placeholder: 'Message' }
+							] %}
+								<div class="contacts__field">
+									<input type="text" class="input" placeholder="{{item.placeholder}}">
+								</div>
+							{% endfor %}
+						</div>
+						<div class="contacts__footer">
+							<button class="btn contacts__submit">Send {{mixins.icon('chevron')}}</button>
+						</div>
+					</form>
+				</div>
 				<div class="menu__content">
 					{% for item in [
 						{
@@ -49,7 +68,7 @@
 					<ul class="menu__subnav">
 						{% for item in [ 'CONTACT US', 'FACEBOOK', 'BEHANCE', 'INSTAGRAM' ] %}
 						    <li class="menu__item">
-						    	<a href="#" class="menu__link {% if loop.first %}is-active{% endif %}">{{item}}</a>
+						    	<a href="#" class="menu__link {% if loop.first %}menu__link_contacts{% endif %}">{{item}}</a>
 						    </li>
 						{% endfor %}
 					</ul>

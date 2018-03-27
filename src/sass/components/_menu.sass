@@ -19,6 +19,12 @@
 		padding-top: 71px
 	&.is-open
 		transform: translate3d(0,0,0)
+	&.is-contacts
+		.menu
+			&__nav
+				display: none
+			&__contacts
+				display: block
 	&__center
 		display: inline-block
 		vertical-align: middle
@@ -37,7 +43,8 @@
 			width: 60%
 		+sm 
 			width: 100%
-	&__nav
+	&__nav,
+	&__contacts
 		float: right
 		width: 50%
 		+md 
@@ -81,5 +88,5 @@
 		transition: color 0.25s
 		+hover
 			color: $yellow
-		&.is-active
+		&_contacts
 			color: $pink

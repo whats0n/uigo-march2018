@@ -24,12 +24,10 @@ sliders.length && sliders.each((i, slider) => {
       loop: true,
       items: 1,
       autoplay:true,
-      autoplayTimeout: 2500,
+      autoplayTimeout: 5000,
       autoplayHoverPause: false,
       animateOut: 'fadeOut',
-      dots: true,
-      dotsClass: 'owl-dots slider__dots',
-      dotClass: 'owl-dot slider__dot',
+      dots: false,
       onChanged(e) {
         showIMG(slider, pictures, e);
       },
