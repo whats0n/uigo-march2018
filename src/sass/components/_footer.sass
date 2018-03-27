@@ -1,0 +1,36 @@
+.footer
+	padding: 50px 0
+	color: $white 
+	background-image: linear-gradient(229deg, #36424D 3%, #2B333C 100%)
+	border-bottom: 5px solid $black 
+	&__wrap
+		width: 100%
+		display: table
+	&__contacts,
+	&__button
+		vertical-align: middle
+		display: table-cell
+	&__info
+		padding-bottom: 22px
+		vertical-align: top
+		display: inline-block
+		&:not(:last-child)
+			margin-right: 50px
+	&__icon
+		margin-bottom: 7px
+	&__subtitle
+		font-family: $montserrat
+		+f(14px, 700, 1.4)
+		letter-spacing: 0.4px
+	&__meta
+		+f(15px, 400, 20px)
+		letter-spacing: -0.02px
+		a 
+			color: inherit
+			transition: color 0.25s
+			+hover
+				color: $yellow
+	&__subnav
+		margin: 69px -13px 0
+		+md 
+			margin-top: 13px
