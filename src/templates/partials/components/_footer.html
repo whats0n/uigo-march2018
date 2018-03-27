@@ -3,10 +3,36 @@
 	<div class="footer__inner inner">
 		<div class="footer__wrap">
 			<div class="footer__contacts">
-				
+				{% for item in [
+					{
+						icon: 'uy-flag',
+						iconAlt: 'Uruguay Flag',
+						title: 'URUGUAY',
+						address: 'Cassinoni 1011, Montevideo.',
+						phone: '+598 155 6543',
+						phoneLink: '+5981556543'
+					},
+					{
+						icon: 'us-flag',
+						iconAlt: 'United State Flag',
+						title: 'UNITED STATES',
+						address: '2101 Brickell Ave, Apt 401 Miami, FL 33129',
+						phone: '+ 19419000806',
+						phoneLink: '+19419000806'
+					}
+				] %}
+					<div class="footer__info">
+						<img src="img/{{item.icon}}.svg" alt="{{item.iconAlt}}" class="footer__icon">
+						<div class="footer__subtitle">{{item.title}}</div>
+						<ul class="footer__meta">
+							<li>{{item.address}}</li>
+							<li><a href="tel:{{item.phoneLink}}">{{item.phone}}</a></li>
+						</ul>
+					</div>
+				{% endfor %}
 			</div>
 			<div class="footer__button">
-				
+				<button class="btn btn_white btn_sm">Contact Us</button>
 			</div>
 		</div>
 	</div>
