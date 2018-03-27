@@ -22,25 +22,76 @@
 		padding-top: 28px
 	&__row
 		margin: -28px 0
+		&:not(:first-child)
+			&:last-child
+				margin-bottom: -40px
 .project
 	margin: 0 -19px
-	width: 100%
+	width: calc(100% + 38px)
 	table-layout: fixed
 	display: table
 	&__img-wrap
 		position: relative
+		z-index: 1
 		padding: 0 19px
 		vertical-align: top
 		display: table-cell
 	&__overlay
+		position: absolute
+		z-index: -1
+		top: 49px
+		right: 13.5%
+		bottom: -49px
+		width: 109%
+		background-color: $gallery 
+		&_top-right
+			top: -40px
+			left: 13.5%
+			right: auto
+			bottom: 40px
 	&__img
+		position: relative
 		height: 0
-		padding-bottom: 50%
+		padding-bottom: 65.38%
 		background-repeat: no-repeat
 		background-size: cover
 	&__wrap
-		padding: 0 19px
+		padding: 28px 19px
 		text-align: center
 		vertical-align: middle
 		display: table-cell
+		.projects__row:first-child &
+			padding-bottom: 9%
+		.projects__row:last-child &
+			padding-top: 5% 
+		.projects__row:nth-child(odd) &
+			padding-bottom: 5% 
+		.projects__row:nth-child(even) &
+			padding-top: 5% 
 	&__name
+		position: relative
+		padding-left: 21px
+		font-family: $arbutus
+		font-size: 30px
+		color: #3F566E
+		letter-spacing: 0
+		line-height: 1.2
+		vertical-align: top
+		display: inline-block
+		&:hover
+			.icon-arrow-right
+				transform: translateX(5px)
+		.icon-arrow-right
+			margin-left: 8px
+			font-size: 9px
+			transition: transform .3s
+			vertical-align: middle
+	&__line
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 4px
+		background-color: $yellow
+		&_pink
+			background-color: $pink 
