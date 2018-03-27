@@ -20,7 +20,7 @@
 <svg class="icon icon-logo logo__icon"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
 
 		</a> <button class="header__nav js-nav-control"></button> </div>
-        <div class="menu js-nav">
+        <div class="menu js-nav is-contacts">
           <div class="menu__center">
             <div class="inner menu__inner">
               <nav class="nav menu__nav">
@@ -31,6 +31,19 @@
                   <li class="nav__item"> <a href="#" class="nav__link">contact</a> </li>
                 </ul>
               </nav>
+              <div class="contacts menu__contacts">
+                <form action="/" class="contacts__form">
+                  <div class="contacts__title">drop us a line</div>
+                  <div class="contacts__fields">
+                    <div class="contacts__field"> <input type="text" class="input" placeholder="NAME"> </div>
+                    <div class="contacts__field"> <input type="text" class="input" placeholder="EMAIL"> </div>
+                    <div class="contacts__field"> <input type="text" class="input" placeholder="MESSAGE"> </div>
+                  </div>
+                  <div class="contacts__footer"> <button class="btn contacts__submit" type="submit">Send 
+<svg class="icon icon-chevron btn__arrow"><use xlink:href="img/sprite.svg#icon-chevron"></use></svg>
+</button> </div>
+                </form>
+              </div>
               <div class="menu__content">
                 <div class="menu__info"> <img src="img/uy-flag.svg" alt="Uruguay Flag" class="menu__icon">
                   <div class="menu__subtitle">URUGUAY</div>
@@ -47,7 +60,7 @@
                   </ul>
                 </div>
                 <ul class="menu__subnav">
-                  <li class="menu__item"> <a href="#" class="menu__link is-active">CONTACT US</a> </li>
+                  <li class="menu__item"> <a href="#" class="menu__link menu__link_contacts">CONTACT US</a> </li>
                   <li class="menu__item"> <a href="#" class="menu__link ">FACEBOOK</a> </li>
                   <li class="menu__item"> <a href="#" class="menu__link ">BEHANCE</a> </li>
                   <li class="menu__item"> <a href="#" class="menu__link ">INSTAGRAM</a> </li>
@@ -91,11 +104,42 @@
       <!-- begin projects -->
       <div class="projects">
         <div class="projects__inner inner">
-          <div class="projects__topic">
-            <div class="projects__title"></div>
-            <div class="projects__all"> <a href="#" class="btn-text">ALL CASE STUDIES
+          <div class="projects__head">
+            <div class="projects__titles">
+              <div class="projects__label">LATEST</div>
+              <h2 class="projects__title-lg title-lg">projects</h2>
+            </div>
+            <div class="projects__all"> <a href="#" class="btn-text"><span>ALL CASE STUDIES</span>
 <svg class="icon icon-arrow-right "><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
 </a> </div>
+          </div>
+          <div class="projects__wrap">
+            <div class="projects__row">
+              <!-- begin project -->
+              <div class="project">
+                <div class="project__img-wrap">
+                  <div class="project__overlay"></div>
+                  <div class="project__img" style="background-image: url(./img/case-gallito.jpg)"></div>
+                </div>
+                <div class="project__wrap"> <a href="#" class="project__name">Rebranding El Gallito
+<svg class="icon icon-arrow-right "><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+</a> </div>
+              </div>
+              <!-- end project -->
+            </div>
+            <div class="projects__row">
+              <!-- begin project -->
+              <div class="project">
+                <div class="project__wrap"> <a href="#" class="project__name">Rebranding El Gallito
+<svg class="icon icon-arrow-right "><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+</a> </div>
+                <div class="project__img-wrap">
+                  <div class="project__overlay"></div>
+                  <div class="project__img" style="background-image: url(./img/case-cloudtimes.jpg)"></div>
+                </div>
+              </div>
+              <!-- end project -->
+            </div>
           </div>
         </div>
       </div>

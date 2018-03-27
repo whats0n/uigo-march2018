@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-facebook" viewBox="0 0 10 19">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-right" viewBox="0 0 8 9">
+    <title>
+        chevron-cta
+    </title>
+    <path d="M7.901 4.444c0 .819-.684 1.482-1.528 1.482s-1.528-.663-1.528-1.482c0-.818.684-1.481 1.528-1.481s1.528.663 1.528 1.481zM3.056 7.407c0 .819-.684 1.482-1.528 1.482S0 8.226 0 7.407c0-.818.684-1.481 1.528-1.481s1.528.663 1.528 1.481zm0-5.926c0 .819-.684 1.482-1.528 1.482S0 2.3 0 1.481C0 .663.684 0 1.528 0s1.528.663 1.528 1.481z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-chevron" viewBox="0 0 8 9">
+    <title>
+        chevron
+    </title>
+    <path d="M7.901 4.444c0 .819-.684 1.482-1.528 1.482s-1.528-.663-1.528-1.482c0-.818.684-1.481 1.528-1.481s1.528.663 1.528 1.481zM3.056 7.407c0 .819-.684 1.482-1.528 1.482S0 8.226 0 7.407c0-.818.684-1.481 1.528-1.481s1.528.663 1.528 1.481zm0-5.926c0 .819-.684 1.482-1.528 1.482S0 2.3 0 1.481C0 .663.684 0 1.528 0s1.528.663 1.528 1.481z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>

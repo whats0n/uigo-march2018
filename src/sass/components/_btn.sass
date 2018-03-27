@@ -1,0 +1,46 @@
+.btn
+	position: relative
+	display: inline-block
+	vertical-align: top
+	padding-right: 14px
+	height: 21px
+	color: $dark
+	background: none
+	font-family: $montserrat
+	+f(12px, 700, normal)
+	text-transform: uppercase
+	text-decoration: none
+	transition: color 0.25s
+	+hover
+		color: $yellow
+	&__arrow
+		position: absolute
+		top: 50%
+		right: 0
+		margin-top: -0.5em
+		fill: $pink
+		font-size: 9px
+
+.btn-text
+	font-family: $montserrat
+	font-weight: 700 
+	font-size: 12px
+	color: $dark
+	letter-spacing: 0
+	line-height: 1.2
+	vertical-align: top
+	display: inline-block
+	background-color: tranaparent 
+	+hover
+		span
+			border-color: currentColor 
+	span
+		transition: border-color .3s
+		border-bottom: 1px solid transparent 
+	.icon-arrow-right 
+		margin: 2px 0 0 5px
+		color: $pink 
+		font-size: 9px
+	.icon
+		vertical-align: top
+	
