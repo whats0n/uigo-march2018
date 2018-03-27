@@ -1,3 +1,30 @@
+.dark 
+	padding: 20px
+	background: $dark
+
+.btn
+	display: inline-block
+	vertical-align: top
+	border: 1px solid $dark
+	height: 35px
+	color: $dark
+	background: none
+	font-family: $montserrat
+	+f(16px, 300, normal)
+	letter-spacing: -0.02px
+	text-align: center
+	text-transform: uppercase
+	transition: color 0.3s, background 0.3s
+	&_white
+		border-color: $white
+		color: $white
+		+hover 
+			color: $dark
+			background: $white
+	&_sm 
+		width: 180px
+
+
 .btn-text
 	position: relative
 	display: inline-block
@@ -13,6 +40,13 @@
 	transition: color 0.25s
 	+hover
 		color: $yellow
+	&:before
+		position: absolute
+		content: ""
+		top: -10px
+		left: -10px 
+		right: -10px
+		bottom: -10px
 	&_pink
 		+hover
 			color: $pink
@@ -23,4 +57,3 @@
 		margin-top: -0.5em
 		fill: $pink
 		font-size: 9px
-	
