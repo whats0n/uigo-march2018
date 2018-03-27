@@ -1,8 +1,7 @@
 .projects
-	padding: 90px 0 0
 	background-color: rgba($bgGray, 0.1)
-	&__inner
 	&__head
+		padding: 90px 0 90px
 		width: 100%
 		display: table
 	&__titles,
@@ -19,12 +18,29 @@
 		color: $limedSpruce
 		letter-spacing: 4.67px
 		line-height: 0.9
-	&__title-lg
 	&__wrap
+		padding-top: 28px
 	&__row
+		margin: -28px 0
 .project
+	margin: 0 -19px
+	width: 100%
+	table-layout: fixed
+	display: table
 	&__img-wrap
+		position: relative
+		padding: 0 19px
+		vertical-align: top
+		display: table-cell
 	&__overlay
 	&__img
+		height: 0
+		padding-bottom: 50%
+		background-repeat: no-repeat
+		background-size: cover
 	&__wrap
+		padding: 0 19px
+		text-align: center
+		vertical-align: middle
+		display: table-cell
 	&__name
