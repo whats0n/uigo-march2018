@@ -1,41 +1,70 @@
 .projects
 	background-color: rgba($bgGray, 0.1)
 	&__head
-		padding: 90px 0 90px
+		padding: 90px 0
 		width: 100%
 		display: table
+		+sm
+			padding: 40px 0
+			display: block
 	&__titles,
 	&__all
 		vertical-align: middle
 		display: table-cell
+		+sm
+			display: block
 	&__all
 		text-align: right
+		+sm
+			margin-top: 20px
+			text-align: left
 	&__label
 		margin-bottom: -14px
 		font-family: $montserrat
 		font-weight: 200 
 		font-size: 28px
 		color: $limedSpruce
+		text-transform: uppercase
 		letter-spacing: 4.67px
 		line-height: 0.9
+		+sm
+			margin-bottom: -7px
+			font-size: 12px
+			line-height: 1
+			letter-spacing: 2.5px
 	&__wrap
 		padding-top: 28px
+		+sm
+			padding-top: 0
 	&__row
 		margin: -28px 0
+		+sm
+			margin: 0
 		&:not(:first-child)
+			+sm
+				margin-top: 30px
 			&:last-child
 				margin-bottom: -40px
+				+sm
+					margin-bottom: 0
 .project
 	margin: 0 -19px
 	width: calc(100% + 38px)
 	table-layout: fixed
 	display: table
+	+sm
+		display: flex
+		flex-wrap: wrap
 	&__img-wrap
 		position: relative
 		z-index: 1
 		padding: 0 19px
 		vertical-align: top
 		display: table-cell
+		+sm
+			order: 2
+			width: 100%
+			display: block
 	&__overlay
 		position: absolute
 		z-index: -1
@@ -44,11 +73,19 @@
 		bottom: -49px
 		width: 109%
 		background-color: $gallery 
+		+md
+			top: 29px
+			bottom: -29px
+		+sm
+			display: none
 		&_top-right
 			top: -40px
 			left: 13.5%
 			right: auto
 			bottom: 40px
+			+md
+				top: -20px
+				bottom: 40px
 	&__img
 		position: relative
 		height: 0
@@ -60,14 +97,29 @@
 		text-align: center
 		vertical-align: middle
 		display: table-cell
+		+sm
+			margin-bottom: 20px
+			padding: 0 19px
+			width: 100%
+			order: 1
+			text-align: left
+			display: block
 		.projects__row:first-child &
 			padding-bottom: 9%
+			+sm
+				padding-bottom: 0
 		.projects__row:last-child &
 			padding-top: 5% 
+			+sm
+				padding-bottom: 0
 		.projects__row:nth-child(odd) &
 			padding-bottom: 5% 
+			+sm
+				padding-bottom: 0
 		.projects__row:nth-child(even) &
 			padding-top: 5% 
+			+sm
+				padding-bottom: 0
 	&__name
 		position: relative
 		padding-left: 21px
@@ -76,15 +128,18 @@
 		color: #3F566E
 		letter-spacing: 0
 		line-height: 1.2
+		transition: color .3s
 		vertical-align: top
 		display: inline-block
+		+md
+			font-size: 24px
+		+sm
+			font-size: 18px
 		&:hover
-			.icon-arrow-right
-				transform: translateX(5px)
+			color: $yellow 
 		.icon-arrow-right
 			margin-left: 8px
 			font-size: 9px
-			transition: transform .3s
 			vertical-align: middle
 	&__line
 		position: absolute
