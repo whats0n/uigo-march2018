@@ -28,12 +28,12 @@
 								{ placeholder: 'Message' }
 							] %}
 								<div class="contacts__field">
-									<input type="text" class="input" placeholder="{{item.placeholder}}">
+									<input type="text" class="input" placeholder="{{item.placeholder | upper}}">
 								</div>
 							{% endfor %}
 						</div>
 						<div class="contacts__footer">
-							<button class="btn contacts__submit">Send {{mixins.icon('chevron')}}</button>
+							<button class="btn contacts__submit" type="submit">Send {{mixins.icon('chevron', 'btn__arrow')}}</button>
 						</div>
 					</form>
 				</div>

@@ -1,0 +1,25 @@
+.contacts
+	max-width: 460px
+	&__title
+		margin-bottom: 20px
+		color: $yellow
+		font-family: $arbutus
+		+f(69px, 400, 76px)
+		text-align: center
+		+lg 
+			+f(50px, null, 1.2)
+		+md 
+			font-size: 40px
+	&__fields
+		+clr
+	&__field
+		float: right
+		width: 100%
+		max-width: 452px
+		&:not(:last-child)
+			margin-bottom: 35px
+	&__footer
+		margin-top: 24px
+		+clr 
+	&__submit
+		float: right
