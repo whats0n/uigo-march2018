@@ -6,7 +6,7 @@
 		</a>
 		<button class="header__nav js-nav-control"></button>
 	</div>
-	<div class="menu js-nav is-contacts">
+	<div class="menu js-nav">
 		<div class="menu__center">
 			<div class="inner menu__inner">
 				<nav class="nav menu__nav">
@@ -68,7 +68,7 @@
 					<ul class="menu__subnav">
 						{% for item in [ 'CONTACT US', 'FACEBOOK', 'BEHANCE', 'INSTAGRAM' ] %}
 						    <li class="menu__item">
-						    	<a href="#" class="menu__link {% if loop.first %}menu__link_contacts{% endif %}">{{item}}</a>
+						    	<a href="#" class="menu__link {% if loop.first %}menu__link_contacts js-nav-contacts{% endif %}">{{item}}</a>
 						    </li>
 						{% endfor %}
 					</ul>
