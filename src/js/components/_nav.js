@@ -12,27 +12,30 @@ const show = () => {
   nav.addClass(OPEN);
 };
 
-const hide = () => {
-  nav.removeClass(MENU_CONTACTS);
-  control.removeClass(ACTIVE);
-  BODY.removeClass(OVERFLOW_HIDDEN);
+const showAfterScroll = () => {
+  HTMLBODY.animate({
+    scrollTop: 0
+  }, 700, show);
 };
 
 nav.on('transitionend', e => {
   if (e.target !== navDOM || nav.hasClass(OPEN)) return;
-  hide();
+  nav.removeClass(MENU_CONTACTS);
 });
 
 control.on('click', e => {
   e.preventDefault();
+
   if (nav.hasClass(OPEN)) {
     nav.removeClass(OPEN);
     control.removeClass(ACTIVE);
+    BODY.removeClass(OVERFLOW_HIDDEN);
   } else {
-    nav.addClass(OPEN);
-    control.addClass(ACTIVE);
-    BODY.addClass(OVERFLOW_HIDDEN);
+    HTMLBODY.scrollTop() === 0
+      ? show()
+      : showAfterScroll();
   }
+  
 });
 
 contacts.on('click', e => {
@@ -41,9 +44,7 @@ contacts.on('click', e => {
   nav.addClass(MENU_CONTACTS);
   nav.hasClass(OPEN) || (HTMLBODY.scrollTop() === 0)
     ? show()
-    : HTMLBODY.animate({
-      scrollTop: 0
-    }, 700, show);
+    : showAfterScroll();
 });
 
 
