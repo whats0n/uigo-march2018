@@ -1,5 +1,6 @@
 import { ANIMATE } from '../_constants';
 import { WIN } from '../_constants';
+import STAGGER from './_stagger';
 
 class OnScreen {
 
@@ -12,8 +13,8 @@ class OnScreen {
     this._onStart = [];
     this._onEnd = [];
     this._threshold = {
-      start: 100/start || 2,
-      end: 100/end || 2
+      start: start || 1,
+      end: end || 1
     };
 
     this._detectOnScroll();
@@ -63,10 +64,16 @@ class OnScreen {
 
 };
 
-let parent = '[data-anim-from="bottom"]';
+let parent = '[data-anim-parent]';
 new OnScreen({ selector: parent })
   .onStart($section => {
     if (!$section.hasClass(ANIMATE)) {
-      $section.addClass(ANIMATE);
+      const items = $section.find('[data-anim-from]');
+      STAGGER({
+        elements: items,
+        delay: 0.3,
+        duration: 1.5
+      });
     };
+    $section.addClass(ANIMATE);
   } );
