@@ -23,6 +23,8 @@ sliders.length && sliders.each((i, slider) => {
     .owlCarousel({
       loop: true,
       items: 1,
+      mouseDrag: false,
+      touchDrag: false,
       autoplay:true,
       autoplayTimeout: 5000,
       autoplayHoverPause: false,
