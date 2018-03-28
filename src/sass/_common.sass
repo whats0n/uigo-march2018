@@ -7,3 +7,13 @@ body
 	+font-smoothing
 	&.is-overflow-hidden
 		overflow: hidden
+
+[data-anim-from]
+	transition: opacity .5s ease-out, transform .5s ease-out
+	&.is-animate
+		opacity: 1
+		transform: translate3d(0,0,0)
+[data-anim-from="bottom"]
+	position: relative
+	opacity: 0
+	transform: translateY(50px)

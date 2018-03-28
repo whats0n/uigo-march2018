@@ -1,6 +1,7 @@
 export const NO_TOUCH = 'no-touch';
 export const OPEN = 'is-open';
 export const ACTIVE = 'is-active';
+export const ANIMATE = 'is-animate';
 export const OVERFLOW_HIDDEN = 'is-overflow-hidden';
 
 export const widthMD = 1024;
