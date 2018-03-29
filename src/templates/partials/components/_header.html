@@ -1,5 +1,7 @@
+{% import "partials/_mixins.html" as mixins %}
+{% macro block(props) %}
 <!-- begin header -->
-<header class="header">
+<header class="header{% if props.class %} {{props.class}}{% endif %} js-header">
 	<div class="inner header__inner">
 		<a href="#" class="logo">
 			{{mixins.icon('logo', 'logo__icon')}}
@@ -78,3 +80,4 @@
 	</div>
 </header>
 <!-- end header -->
+{% endmacro %}

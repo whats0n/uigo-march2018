@@ -5,7 +5,7 @@ title: Index page
 
 {% block content %}
 	
-	{% include 'partials/components/_header.html' %}
+	{{ header.block() }}
 	{% include 'partials/components/_slider.html' %}
 	{% include 'partials/components/_projects.html' %}
 	{% include 'partials/components/_create.html' %}
