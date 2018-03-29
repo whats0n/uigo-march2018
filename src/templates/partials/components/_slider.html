@@ -26,7 +26,7 @@
 		] %}
 		<div class="slider__pictures">
 			{% for item in slides %}
-				<img src="img/{{item.img}}" alt="{{item.title or item.titleSM}}" class="slider__picture slider__picture_{{loop.index}} js-slider-picture" data-index="{{loop.index}}">
+				<img src="img/hero/{{item.img}}" alt="{{item.title or item.titleSM}}" class="slider__picture slider__picture_{{loop.index}} js-slider-picture" data-index="{{loop.index}}">
 			{% endfor %}
 		</div>
 		<div class="slider__content owl-carousel js-slider-content">
