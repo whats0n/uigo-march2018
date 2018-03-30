@@ -3,3 +3,5 @@ ProjectTitle: uigo-march-2018
 PageList:
 - file: home.html
   ready: 100
+- file: project-detail.html
+  ready: 100

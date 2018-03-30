@@ -1,0 +1,62 @@
+.details
+	display: flex
+	flex-direction: row
+	align-items: center
+	+sm 
+		display: block
+	&__figure,
+	&__content
+		flex-grow: 1
+		width: 50%
+		+sm 
+			width: 100%
+	&__figure
+		position: relative
+		z-index: -1
+		order: 1
+		padding-top: 27px
+		margin-bottom: -26px
+		font-size: 0
+		text-align: center
+		+sm 
+			position: relative
+			margin: 0
+		img 
+			max-width: 369px
+			+md 
+				max-width: 300px
+	&__content
+		padding: 50px 0 40px
+	&__header
+		position: relative
+		padding-left: 35px
+		margin-bottom: 48px
+		max-width: 450px
+		+sm 
+			padding-left: 20px
+			margin-bottom: 30px
+			max-width: 320px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 6px
+			border-left: 4px solid $yellow
+	&__label
+		font-family: $montserrat
+		+f(25px, 300, 21px)
+		letter-spacing: 4.17px
+	&__title
+		font-family: $arbutus
+		+f(70px, 400, 66px)
+		+md 
+			+f(60px, null, 1)
+		+sm 
+			font-size: 48px
+	&__description
+		padding-left: 37px
+		font-family: $lato
+		+f(14px, 700, 20px)
+		+sm 
+			padding-left: 0

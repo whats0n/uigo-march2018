@@ -1,0 +1,81 @@
+.sm-info
+	display: flex
+	flex-direction: row
+	align-items: center
+	padding: 40px 0
+	min-height: 340px
+	+md 
+		display: block
+	&_right
+		.sm-info
+			&__figures
+				order: 1
+			&__content
+				padding-left: 0
+				padding-right: 42px
+				+md 
+					padding-right: 0
+	&__figures,
+	&__content
+		flex-grow: 1
+		width: 50%
+		+md 
+			width: 100%
+	&__content
+		padding-left: 40px
+		+md 
+			padding-top: 20px
+			padding-left: 0
+	&__row 
+		margin: 0 -20px
+		font-size: 0
+		+md 
+			text-align: center
+		+sm 
+			margin: 0 -10px
+	&__col
+		display: inline-block
+		vertical-align: top
+		padding: 10px 20px
+		width: 33.33%
+		max-width: 193px
+		+sm 
+			padding: 10px
+	&__img
+		padding-bottom: 100%
+		+cover
+	&__title
+		font-family: $montserrat
+		+f(16px, 600, 21px)
+		letter-spacing: 0.89px
+	&__description
+		padding-top: 12px
+		opacity: 0.7
+		font-family: $lato
+		+f(14px, 400, 20px)
+	&__images
+		margin: 0 -30px
+		font-size: 0
+		+md 
+			margin-bottom: 20px
+			text-align: center
+	&__image
+		display: inline-block
+		vertical-align: bottom
+		padding: 10px 30px
+		width: 50%
+		+sm 
+			padding: 0 30px
+			width: 100%
+		&:not(:last-child)
+			+sm 
+				margin-bottom: 30px
+		&_sm
+			max-width: 257px
+			max-height: 251px
+		&_md 
+			max-width: 311px
+			max-height: 264px
+		img 
+			max-width: 100%
+			max-height: 100%
