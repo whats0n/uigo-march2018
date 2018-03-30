@@ -82,13 +82,16 @@
       <!-- begin navigation -->
       <div class="navigation">
         <div class="navigation__inner inner">
-          <div class="navigation__wrap">
-            <ul class="navigation__list">
-              <li class="navigation__item is-active"><a class="navigation__link" href="#">Latest</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Interfaces</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Software</a></li>
-              <li class="navigation__item"><a class="navigation__link" href="#">Branding</a></li>
-            </ul>
+          <div class="navigation__out js-navigation-out">
+            <div class="navigation__current js-navigation-current"><span class="js-navigation-current-text"></span> <svg class="icon icon-arrow-right "><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg> </div>
+            <div class="navigation__wrap js-navigation-wrap">
+              <ul class="navigation__list">
+                <li class="navigation__item is-active"><a class="navigation__link" href="#">Latest</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Interfaces</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Software</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Branding</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -97,35 +100,33 @@
       <div class="projects">
         <div class="projects__inner inner">
           <div class="projects__out">
-            <div class="projects__wrap">
-              <div class="projects__field">
-                <!-- begin project -->
-                <div class="project" data-anim-parent>
-                  <div class="project__img-wrap" data-anim-from="bottom">
-                    <div class="project__img" style="background-image: url(./img/case-gallito.jpg)">
-                      <div class="project__overlay"></div>
-                    </div>
-                  </div>
-                  <div class="project__wrap"> <a href="#" class="project__name" data-anim-from="bottom"><span class="project__line"></span>Rebranding El Gallito
-<svg class="icon icon-arrow-right "><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
-</a> </div>
-                </div>
-                <!-- end project -->
-              </div>
-              <div class="projects__field">
-                <!-- begin project -->
-                <div class="project" data-anim-parent>
-                  <div class="project__wrap"> <a href="#" class="project__name" data-anim-from="bottom"><span class="project__line project__line_pink"></span>Cloudtimes
-<svg class="icon icon-arrow-right "><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
-</a> </div>
-                  <div class="project__img-wrap" data-anim-from="bottom">
-                    <div class="project__img" style="background-image: url(./img/case-cloudtimes.jpg)">
-                      <div class="project__overlay project__overlay_top-right"></div>
-                    </div>
+            <div class="projects__field">
+              <!-- begin project -->
+              <div class="project" data-anim-parent>
+                <div class="project__img-wrap" data-anim-from="bottom">
+                  <div class="project__img" style="background-image: url(./img/case-gallito.jpg)">
+                    <div class="project__overlay"></div>
                   </div>
                 </div>
-                <!-- end project -->
+                <div class="project__wrap"> <a href="#" class="project__name" data-anim-from="bottom"><span class="project__line"></span>Rebranding El Gallito
+<svg class="icon icon-arrow-right "><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+</a> </div>
               </div>
+              <!-- end project -->
+            </div>
+            <div class="projects__field">
+              <!-- begin project -->
+              <div class="project" data-anim-parent>
+                <div class="project__wrap"> <a href="#" class="project__name" data-anim-from="bottom"><span class="project__line project__line_pink"></span>Cloudtimes
+<svg class="icon icon-arrow-right "><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+</a> </div>
+                <div class="project__img-wrap" data-anim-from="bottom">
+                  <div class="project__img" style="background-image: url(./img/case-cloudtimes.jpg)">
+                    <div class="project__overlay project__overlay_top-right"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end project -->
             </div>
           </div>
         </div>
