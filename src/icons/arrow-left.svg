@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="9px" viewBox="0 0 8 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>cta-back-chevron/blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Work-(portfolio)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Project-Detail" transform="translate(-135.000000, -431.000000)" fill="#3F566E">
+            <g id="navigation-work" transform="translate(0.000000, 394.000000)">
+                <g id="cta-back" transform="translate(135.000000, 31.000000)">
+                    <path d="M4,14 C3.26362033,14 2.66666667,13.3938463 2.66666667,12.6461179 C2.66666667,11.8983894 3.26362033,11.2922357 4,11.2922357 C4.73637967,11.2922357 5.33333333,11.8983894 5.33333333,12.6461179 C5.33333333,13.3938463 4.73637967,14 4,14 Z M1.33333333,9.70776429 C0.596953667,9.70776429 0,9.10161061 0,8.35388214 C0,7.60615368 0.596953667,7 1.33333333,7 C2.069713,7 2.66666667,7.60615368 2.66666667,8.35388214 C2.66666667,9.10161061 2.069713,9.70776429 1.33333333,9.70776429 Z M6.66666667,9.70776429 C5.930287,9.70776429 5.33333333,9.10161061 5.33333333,8.35388214 C5.33333333,7.60615368 5.930287,7 6.66666667,7 C7.40304633,7 8,7.60615368 8,8.35388214 C8,9.10161061 7.40304633,9.70776429 6.66666667,9.70776429 Z" id="cta-back-chevron/blue" transform="translate(4.000000, 10.500000) rotate(-270.000000) translate(-4.000000, -10.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

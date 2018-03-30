@@ -1,0 +1,65 @@
+.navigation
+	border-bottom: 1px solid rgba(#979797, 0.3) 
+	&__wrap
+		align-items: center
+		justify-content: space-between
+		display: flex
+	&__btn
+		font-family: $montserrat
+		font-weight: 900 
+		font-size: 12px
+		color: #3F566E
+		letter-spacing: 0
+		line-height: 1.2
+		transition: color .3s
+		text-transform: uppercase
+		display: inline-block
+		+hover
+			color: $yellow 
+		.icon
+			margin-top: 2px
+			vertical-align: top
+			font-size: 9px
+		.icon-arrow-left
+			margin-right: 4px
+		.icon-arrow-right
+			margin-left: 4px
+	&__list
+		margin: 0 auto
+		font-size: 0
+		text-align: center
+	&__item
+		position: relative
+		vertical-align: top
+		display: inline-block
+		&.is-active
+			.navigation__link
+				opacity: 1
+				&:before
+					opacity: 1
+		&:not(:first-child)
+			margin-left: 46px
+	&__link
+		position: relative
+		z-index: 1
+		padding: 33px 4px
+		opacity: 0.4
+		font-family: $montserrat
+		font-size: 14px
+		color: $dark
+		text-transform: uppercase
+		letter-spacing: 0
+		line-height: 1
+		transition: opacity .3s
+		display: block
+		+hover
+			opacity: 1
+		&:before
+			position: absolute
+			content: "" 
+			left: 0
+			right: 0
+			bottom: -1px
+			height: 4px
+			opacity: 0
+			background-color: $yellow 
