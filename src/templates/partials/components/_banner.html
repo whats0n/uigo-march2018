@@ -1,0 +1,15 @@
+{% macro call(props) %}
+<!-- begin banner -->
+<div class="banner" data-anim-parent>
+	<div class="inner banner__inner">
+		<div class="banner__content">
+			<div class="banner__label" data-anim-from="bottom">{{props.label or 'Got a'}}</div>
+			<div class="banner__title" data-anim-from="bottom">BRANDING PROJECT?</div>
+		</div>
+		<div class="banner__btn" data-anim-from="bottom">
+			<a href="#" class="btn btn_wide btn_lg btn_dark">{{props.button or 'Drop us a line'}}</a>
+		</div>
+	</div>
+</div>
+<!-- end banner -->
+{% endmacro %}

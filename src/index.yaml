@@ -5,3 +5,5 @@ PageList:
   ready: 100
 - file: work.html
   ready: 100
+- file: project-detail.html
+  ready: 100

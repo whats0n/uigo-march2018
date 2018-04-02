@@ -1,0 +1,40 @@
+.banner
+	padding: 120px 0 145px
+	background: $yellow
+	+md 
+		padding: 100px 0
+	+sm 
+		padding: 50px 0
+	&__label
+		padding: 0 3px
+		color: $dark
+		font-family: $montserrat
+		+f(20px, 300, 1.2)
+		letter-spacing: 0.57px
+		text-transform: uppercase
+	&__title
+		color: $white
+		font-family: $montserrat
+		+f(70px, 700, 60px)
+		letter-spacing: 2px
+		+sm 
+			+f(48px, null, 1)
+	&__inner
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		+md 
+			display: block
+			text-align: center
+	&__content
+		flex-grow: 1
+		padding-right: 15px
+		+md 
+			padding: 0 0 20px
+	&__btn
+		padding: 5px 0
+		width: 313px
+		+md 
+			margin: 0 auto
+			width: auto
+			max-width: 300px

@@ -1,0 +1,56 @@
+.sm-banner
+	position: relative
+	padding: 150px 0 160px
+	color: $white
+	background: #1E2934
+	+md 
+		padding: 100px 0
+	+sm 
+		padding: 50px 0
+	&__img 
+		position: absolute
+		z-index: 1
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		&-in 
+			position: relative
+			width: 64%
+			max-width: 921px
+			height: 100%
+			opacity: 0.6
+			background-repeat: no-repeat
+			background-position: left top
+			background-size: cover
+			+md 
+				width: 100%
+				max-width: none
+			&:before
+				content: ''
+				position: absolute
+				z-index: 1
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background-image: linear-gradient(257deg, #1E2934 10%, rgba(30,41,52,0.00) 100%)
+	&__inner
+		position: relative
+		z-index: 2
+	&__content
+		float: right
+		padding-left: 40px
+		width: 50%
+		+md 
+			padding: 0
+			width: 100%
+	&__title
+		font-family: $montserrat
+		+f(16px, 600, 21px)
+		letter-spacing: 0.89px
+	&__description
+		padding-top: 12px
+		opacity: 0.7
+		font-family: $lato
+		+f(14px, 400, 20px)
