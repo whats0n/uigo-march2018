@@ -5,7 +5,9 @@ title: Index page
 
 {% block content %}
 	
-	{% include 'partials/components/_header.html' %}
+	{{ header.block({ class: 'header_mod' }) }}
+	{% include 'partials/components/_hero.html' %}
+	{{ navigation.block({ activeClass: 4 }) }}
 	<div class="project-details">
 		<div class="sm-section" data-anim-parent>
 			<div class="inner sm-section__inner">
@@ -82,6 +84,11 @@ title: Index page
 			</div>
 		</div>
 	</div>
+	{{banner.call({
+		label: 'GOT A',
+		title: 'BRANDING PROJECT?',
+		button: 'DROP US A LINE'
+	})}}
 	{% include 'partials/components/_footer.html' %}
 
 {% endblock %}

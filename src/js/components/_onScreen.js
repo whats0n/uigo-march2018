@@ -1,5 +1,5 @@
 import { ANIMATE } from '../_constants';
-import { WIN } from '../_constants';
+import { WIN, BODY } from '../_constants';
 import STAGGER from './_stagger';
 
 class OnScreen {
@@ -13,8 +13,8 @@ class OnScreen {
     this._onStart = [];
     this._onEnd = [];
     this._threshold = {
-      start: start || 1,
-      end: end || 1
+      start: start || 1.2,
+      end: end || 1.2
     };
 
     this._detectOnScroll();
@@ -77,3 +77,7 @@ new OnScreen({ selector: parent })
     };
     $section.addClass(ANIMATE);
   } );
+
+if ($(parent).length) {
+  BODY.trigger('scroll');
+};

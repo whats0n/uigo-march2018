@@ -1,0 +1,14 @@
+{% import "partials/_mixins.html" as mixins %}
+{% macro block(props) %}
+<!-- begin navigation -->
+<div class="navigation">
+	<div class="navigation__inner inner">
+		<ul class="navigation__list">
+			{% for text in ['Latest','Interfaces','Software','Branding'] %}
+				<li class="navigation__item{% if props.activeClass == loop.index %} is-active{% endif %}"><a class="navigation__link" href="#">{{ text }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+<!-- end navigation -->
+{% endmacro %}

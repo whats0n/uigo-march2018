@@ -1,0 +1,29 @@
+.hero
+	position: relative
+	padding: 150px 0 160px
+	overflow: hidden
+	color: $white 
+	text-align: center
+	&:before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		opacity: 0.96
+		background-image: linear-gradient(65deg, rgba(17,24,31,0.90) 0%, rgba(32,54,75,0.90) 83%)
+	&__bg
+		position: absolute
+		top: -80px
+		left: 0
+		right: 0
+		bottom: -80px
+		z-index: 1
+		opacity: 0.15
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat 
+	&__inner
+		position: relative
+		z-index: 2

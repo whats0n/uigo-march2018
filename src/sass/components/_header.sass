@@ -14,11 +14,6 @@
 		width: 31px
 		height: 31px
 		background: none
-		&.is-active
-			&:before
-				transform: translate3d(0px,-3px,0) rotate(-45deg) scaleX(1.4)
-			&:after
-				transform: translate3d(0px,2px,0) rotate(45deg) scaleX(1.4)
 		&:before,
 		&:after
 			content: ''
@@ -26,9 +21,18 @@
 			right: 7px
 			width: 17px
 			height: 3px
-			background: $dark
+			background-color: $dark
 			transform-origin: right center
-			transition: transform 0.25s
+			transition: transform 0.25s, background-color .25s
+			.header_mod &
+				background-color: $yellow 
+		&.is-active
+			&:before
+				transform: translate3d(0px,-3px,0) rotate(-45deg) scaleX(1.4)
+				background-color: $dark
+			&:after
+				transform: translate3d(0px,2px,0) rotate(45deg) scaleX(1.4)
+				background-color: $dark
 		&:before
 			top: 8px
 		&:after
@@ -43,3 +47,9 @@
 	&__icon
 		display: block
 		fill: $dark
+		transition: fill .25s
+		.header_mod &
+			fill: $white 
+		.header.is-open &
+			fill: $dark
+			

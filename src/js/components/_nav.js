@@ -3,6 +3,7 @@ import {OPEN, ACTIVE, OVERFLOW_HIDDEN, BODY, HTMLBODY} from '../_constants';
 const MENU_CONTACTS = 'is-contacts';
 const nav = $('.js-nav');
 const control = $('.js-nav-control');
+const header = $('.js-header');
 const contacts = $('.js-nav-contacts');
 const navDOM = nav.get(0);
 
@@ -10,6 +11,7 @@ const show = () => {
   control.addClass(ACTIVE);
   BODY.addClass(OVERFLOW_HIDDEN);
   nav.addClass(OPEN);
+  header.addClass(OPEN);
 };
 
 const showAfterScroll = () => {
@@ -30,6 +32,7 @@ control.on('click', e => {
     nav.removeClass(OPEN);
     control.removeClass(ACTIVE);
     BODY.removeClass(OVERFLOW_HIDDEN);
+    header.removeClass(OPEN);
   } else {
     HTMLBODY.scrollTop() === 0
       ? show()

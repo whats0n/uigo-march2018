@@ -5,16 +5,20 @@
 .btn
 	display: inline-block
 	vertical-align: top
+	padding: 0 15px
 	border: 1px solid $dark
 	height: 35px
 	color: $dark
 	background: none
 	font-family: $montserrat
-	+f(16px, 300, normal)
+	+f(16px, 300, 33px)
 	letter-spacing: -0.02px
 	text-align: center
 	text-transform: uppercase
 	transition: color 0.3s, background 0.3s
+	+hover
+		color: $white
+		background: $dark
 	&_white
 		border-color: $white
 		color: $white
@@ -23,8 +27,12 @@
 			background: $white
 	&_sm 
 		width: 180px
-
-
+	&_wide
+		width: 100%
+	&_lg 
+		height: 50px
+		+f(24px, null, 48px)
+		letter-spacing: -0.03px
 .btn-text
 	position: relative
 	display: inline-block
