@@ -16,11 +16,19 @@ title: Work
 					<div class="project" data-anim-parent>
 						<div class="project__img-wrap" data-anim-from="bottom">
 							<div class="project__img" style="background-image: url(./img/case-gallito.jpg)" >
-								<div class="project__overlay"></div>
+								<div class="project__overlay project__overlay_yellow" data-overlay-direction="bottom-left"></div>
 							</div>
 						</div>
 						<div class="project__wrap">
-							<a href="#" class="project__name" data-anim-from="bottom"><span class="project__line"></span>Rebranding El Gallito{{ mixins.icon('arrow-right') }}</a>
+							<div class="project__content">
+								<a href="#" class="project__name" data-anim-from="bottom"><span class="project__line"></span>Rebranding El Gallito{{ mixins.icon('arrow-right') }}</a>
+								<div class="project__out">
+									<div class="project__text" data-anim-from="bottom">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</div>
+									<div class="project__footer" data-anim-from="bottom">
+										<a href="#" class="btn-text btn-text_yellow">VIEW MORE{{mixins.icon('arrow-right')}}</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- end project -->
@@ -29,11 +37,63 @@ title: Work
 					<!-- begin project -->
 					<div class="project" data-anim-parent>
 						<div class="project__wrap">
-							<a href="#" class="project__name" data-anim-from="bottom"><span class="project__line project__line_pink"></span>Cloudtimes{{ mixins.icon('arrow-right') }}</a>
+							<div class="project__content">
+								<a href="#" class="project__name" data-anim-from="bottom"><span class="project__line project__line_pink"></span>Cloudtimes{{ mixins.icon('arrow-right') }}</a>
+								<div class="project__out">
+									<div class="project__text" data-anim-from="bottom">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</div>
+									<div class="project__footer">
+										<a href="#" class="btn-text" data-anim-from="bottom">VIEW MORE{{mixins.icon('arrow-right')}}</a>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="project__img-wrap" data-anim-from="bottom">
 							<div class="project__img" style="background-image: url(./img/case-cloudtimes.jpg)">
-								<div class="project__overlay project__overlay_top-right"></div>
+								<div class="project__overlay project__overlay_pink" data-overlay-direction="top-right"></div>
+							</div>
+						</div>
+					</div>
+					<!-- end project -->
+				</div>
+				<div class="projects__field">
+					<!-- begin project -->
+					<div class="project" data-anim-parent>
+						<div class="project__img-wrap" data-anim-from="bottom">
+							<div class="project__img" style="background-image: url(./img/case-gallito.jpg)" >
+								<div class="project__overlay project__overlay_turquoise" data-overlay-direction="top-left"></div>
+							</div>
+						</div>
+						<div class="project__wrap">
+							<div class="project__content">
+								<a href="#" class="project__name" data-anim-from="bottom"><span class="project__line project__line_turquoise"></span>Rebranding El Gallito{{ mixins.icon('arrow-right') }}</a>
+								<div class="project__out">
+									<div class="project__text" data-anim-from="bottom">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</div>
+									<div class="project__footer" data-anim-from="bottom">
+										<a href="#" class="btn-text btn-text_yellow">VIEW MORE{{mixins.icon('arrow-right')}}</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end project -->
+				</div>
+				<div class="projects__field">
+					<!-- begin project -->
+					<div class="project" data-anim-parent>
+						<div class="project__wrap">
+							<div class="project__content">
+								<a href="#" class="project__name" data-anim-from="bottom"><span class="project__line project__line_pink"></span>Cloudtimes{{ mixins.icon('arrow-right') }}</a>
+								<div class="project__out">
+									<div class="project__text" data-anim-from="bottom">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</div>
+									<div class="project__footer">
+										<a href="#" class="btn-text" data-anim-from="bottom">VIEW MORE{{mixins.icon('arrow-right')}}</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project__img-wrap" data-anim-from="bottom">
+							<div class="project__img" style="background-image: url(./img/case-cloudtimes.jpg)">
+								<div class="project__overlay project__overlay_yellow" data-overlay-direction="bottom-right"></div>
 							</div>
 						</div>
 					</div>
@@ -42,6 +102,11 @@ title: Work
 			</div>
 		</div>
 	</div>
+	{{banner.call({
+		label: 'GOT A',
+		title: 'COOL PROJECT FOR US?',
+		button: 'DROP US A LINE'
+	})}}
 	<!-- end projects -->
 	{% include 'partials/components/_footer.html' %}
 
