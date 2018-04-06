@@ -25,7 +25,7 @@ sliders.length && sliders.each((i, slider) => {
       items: 1,
       mouseDrag: false,
       touchDrag: false,
-      autoplay:true,
+      autoplay: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: false,
       animateOut: 'fadeOut',

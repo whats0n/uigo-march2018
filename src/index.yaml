@@ -7,3 +7,5 @@ PageList:
   ready: 100
 - file: project-detail.html
   ready: 100
+- file: about_us.html
+  ready: 100
