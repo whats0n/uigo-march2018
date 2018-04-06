@@ -1,0 +1,62 @@
+$gap: 15px
+
+.carousel
+	overflow: hidden
+	&__body
+		margin: 0 -15px
+	&__track
+		overflow: hidden
+		width: 2342px + $gap*2
+		+clr
+	&__item
+		float: left
+		padding: 0 $gap
+		&_353
+			width: 353px + $gap*2
+			.carousel__row
+				&:nth-child(1)
+					height: 95px + $gap*2
+				&:nth-child(2)
+					height: 226px + $gap*2
+		&_285
+			width: 285px + $gap*2
+			.carousel__row 
+				height: 351px + $gap*2
+		&_369
+			width: 369px + $gap*2
+			.carousel__row
+				&:nth-child(1)
+					height: 149px + $gap*2
+				&:nth-child(2)
+					height: 172px + $gap*2
+		&_235
+			width: 235px + $gap*2
+			.carousel__row
+				&:nth-child(1)
+					height: 199px + $gap*2
+				&:nth-child(2)
+					height: 122px + $gap*2
+		&_173
+			width: 173px + $gap*2
+			.carousel__row 
+				height: 351px + $gap*2
+		&_438
+			width: 438px + $gap*2
+			.carousel__row
+				&:nth-child(1)
+					height: 149px + $gap*2
+				&:nth-child(2)
+					height: 172px + $gap*2
+		&_42
+			width: 42px + $gap*2
+			.carousel__row 
+				height: 351px + $gap*2
+	&__row
+		display: flex
+		margin: 0 (-$gap)
+	&__col
+		flex-grow: 1
+		padding: $gap
+	&__img 
+		height: 100%
+		+cover

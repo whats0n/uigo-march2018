@@ -1,0 +1,20 @@
+---
+title: Work
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{{ header.block({ class: 'header_mod' }) }}
+	{% include 'partials/components/_hero.html' %}
+
+	{% include 'partials/components/_carousel.html' %}
+	
+	{{banner.call({
+		label: 'GOT A',
+		title: 'COOL PROJECT FOR US',
+		titleSM: true,
+		button: 'DROP US A LINE'
+	})}}
+	{% include 'partials/components/_footer.html' %}
+
+{% endblock %}
