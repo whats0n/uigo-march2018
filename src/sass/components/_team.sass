@@ -1,0 +1,51 @@
+.team
+	padding: 100px 0
+	+sm
+		padding: 60px 0
+	&__text
+		margin-top: 12px
+		max-width: 480px
+		+sm
+			margin-top: 0
+	&__row
+		+clr
+	&__col
+		float: left
+		width: 50%
+		&:not(:first-child)
+			+sm
+				margin-top: 30px
+	&__list
+		margin: 67px -15px -45px
+		font-size: 0
+		+sm
+			margin-top: 40px
+			margin-bottom: -30px
+	&__item
+		margin-bottom: 45px 
+		padding: 0 15px
+		width: 16.6%
+		font-size: 14px
+		vertical-align: top
+		display: inline-block
+		+md
+			width: 25%
+		+sm
+			width: 50%
+			margin-bottom: 30px
+	&__item-wrap
+		text-align: center
+	&__img
+		margin: 0 auto
+		width: 128px
+		height: 128px
+		border-radius: 50% 
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat 
+	&__name
+		margin-top: 12px
+		font-family: $arbutus
+		font-size: 15px
+		color: #3F566E
+		letter-spacing: 0

@@ -14,7 +14,7 @@ class OnScreen {
     this._onEnd = [];
     this._threshold = {
       start: start || 1.2,
-      end: end || 1.2
+      end: end || 2.5
     };
 
     this._detectOnScroll();
@@ -67,6 +67,17 @@ class OnScreen {
 let parent = '[data-anim-parent]';
 new OnScreen({ selector: parent })
   .onStart($section => {
+    if (!$section.hasClass(ANIMATE)) {
+      const items = $section.find('[data-anim-from]');
+      STAGGER({
+        elements: items,
+        delay: 0.3,
+        duration: 1.5
+      });
+    };
+    $section.addClass(ANIMATE);
+  } )
+  .onEnd($section => {
     if (!$section.hasClass(ANIMATE)) {
       const items = $section.find('[data-anim-from]');
       STAGGER({

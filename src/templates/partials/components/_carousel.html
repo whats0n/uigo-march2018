@@ -1,13 +1,16 @@
 <!-- begin carousel -->
 <div class="carousel">
-	<div class="sm-heading carousel__header">
-		<div class="inner">
+	<div class="inner">
+		<div class="sm-heading carousel__header" data-anim-parent>
 			<div class="sm-heading__row">
 				<div class="sm-heading__col">
-					<div class="sm-heading__label">PLAYIN´ON THE</div>
-					<h2 class="sm-heading__title">DREAM FIELD</h2>
+					{{ head.block({
+						label: "Playing on the",
+						title: "DREAM FIELD",
+						titleClass: "yellow"
+					}) }}
 				</div>
-				<div class="sm-heading__col">
+				<div class="sm-heading__col" data-anim-from="bottom">
 					<div class="sm-heading__description">
 						<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness.</p>
 					</div>

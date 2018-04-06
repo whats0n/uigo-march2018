@@ -5,15 +5,24 @@ title: Work
 {% block content %}
 	
 	{{ header.block({ class: 'header_mod' }) }}
-	{% include 'partials/components/_hero.html' %}
-
+	<!-- begin hero -->
+	<div class="hero">
+		<div class="hero__bg" style="background-image: url(./img/hero/hero-about.jpg)" data-paroller-factor="0.1" data-paroller-type="foreground"></div>
+		<div class="hero__inner inner">
+			<h1 class="hero__title title-bigger">about</h1>
+		</div>
+	</div>
+	<!-- end hero -->
+	{% include 'partials/components/_team.html' %}
 	{% include 'partials/components/_carousel.html' %}
-	
+	{% include 'partials/components/_partners.html' %}
 	{{banner.call({
-		label: 'GOT A',
-		title: 'COOL PROJECT FOR US',
+		class: 'pink',
+		label: 'WANT TO',
+		title: 'WORK WITH US?',
 		titleSM: true,
-		button: 'DROP US A LINE'
+		button: 'SEND RESUME',
+		btnWhite: true
 	})}}
 	{% include 'partials/components/_footer.html' %}
 

@@ -1,13 +1,13 @@
 {% macro call(props) %}
 <!-- begin banner -->
-<div class="banner" data-anim-parent>
+<div class="banner{% if props.class %} banner_{{ props.class }}{% endif %}" data-anim-parent>
 	<div class="inner banner__inner">
 		<div class="banner__content">
 			<div class="banner__label" data-anim-from="bottom">{{props.label or 'Got a'}}</div>
 			<div class="banner__title {% if props.titleSM %}banner__title_sm{% endif %}" data-anim-from="bottom">{{props.title or 'BRANDING PROJECT'}}?</div>
 		</div>
 		<div class="banner__btn" data-anim-from="bottom">
-			<a href="#" class="btn btn_wide btn_lg btn_dark js-nav-contacts">{{props.button or 'Drop us a line'}}</a>
+			<a href="#" class="btn btn_wide btn_lg{% if props.btnWhite %} btn_white{% else %} btn_dark{% endif %} js-nav-contacts">{{props.button or 'Drop us a line'}}</a>
 		</div>
 	</div>
 </div>

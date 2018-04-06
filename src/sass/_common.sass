@@ -17,11 +17,14 @@ body
 .text-yellow
 	color: $yellow 
 
-.bla
-	position: relative
-	overflow: hidden
-.bla__in
+.row
+	margin: 0 -15px
+	+clr
+.col
 	float: left
-	height: 300px
-	width: 400px
-	border: 1px solid red 
+	padding: 0 15px
+	&-50
+		width: 50%
+	&-sm-100
+		+sm
+			width: 100%
