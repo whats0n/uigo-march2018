@@ -1,0 +1,9 @@
+{% import "partials/_mixins.html" as mixins %}
+{% macro block(props) %}
+<!-- begin head -->
+<div class="head">
+	<div class="head__label" data-anim-from="bottom">{{ props.label }}</div>
+	<div class="head__title{% if props.titleClass %} head__title_{{ props.titleClass }}{% endif %}" data-anim-from="bottom">{{ props.title }}</div>
+</div>
+{% endmacro %}
+<!-- end head -->
